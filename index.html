@@ -1,38 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>To-Do List</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <div class="list-container">
-      <div class="list-container-top"></div>
-      <h1>To-Do List</h1>
-      <div class="sort-item">
-        <i id="sort" class="ri-sort-desc"></i>
-      </div>
-      <div class="input-container">
-        <i id="reset" class="ri-close-line"></i>
-        <input type="text" id="task-input" placeholder="Add a new task..." />
-      </div>
-      <div class="note-container"></div>
-      <button id="add-task-btn">
-        <i class="ri-add-line"></i>
-        <p class="list">Add Task</p>
-      </button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do List</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="todo-list-wrapper">
+    <div class="todo-list-header"></div>
+    <h1>To-Do List</h1>
+    <div class="sort-icon-container">
+      <i id="sort" class="ri-sort-desc"></i>
     </div>
-    <script src="./script.js"></script>
-  </body>
+    <div class="task-input-wrapper">
+      <i id="reset" class="ri-close-line"></i>
+      <input type="text" id="task-input" placeholder="Add a new task..." />
+    </div>
+    <div class="task-notes-wrapper"></div>
+    <button id="add-task-button">
+      <i class="ri-add-line"></i>
+      <p class="add-task-text">Add Task</p>
+    </button>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
 </html>

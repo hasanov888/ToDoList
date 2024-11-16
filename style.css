@@ -25,7 +25,7 @@
     align-items: center;
     font-family: "Roboto", sans-serif;
   }
-  body .list-container {
+  body .todo-list-wrapper {
     min-height: 236px;
     padding: 0 22px;
     border: 1px solid #c4c4c4;
@@ -38,7 +38,7 @@
     
     
   }
-  body .list-container::before {
+  body .todo-list-wrapper::before {
     position: absolute;
     content: "";
     width: 100%;
@@ -48,7 +48,7 @@
     border-bottom-right-radius: 0;
     background-color: #ffdc40;
   }
-  body .list-container h1 {
+  body .todo-list-wrapper h1 {
     text-align: center;
     margin: 0;
     height: 34px;
@@ -59,27 +59,27 @@
     top: 273px;
     left: 477px;
   }
-  body .list-container .sort-item {
+  body .todo-list-wrapper .sort-icon-container {
     width: 82%;
     display: flex;
     justify-content: end;
     margin-bottom: 10px;
   }
-  body .list-container .sort-item i {
+  body .todo-list-wrapper .sort-icon-container i {
     cursor: pointer;
     font-size: 1.5rem;
     color: #c4c4c4;
   }
-  body .list-container .sort-item i:hover {
+  body .todo-list-wrapper .sort-icon-container i:hover {
     color: black;
   }
-  body .list-container .input-container {
+  body .todo-list-wrapper .task-input-wrapper {
     display: flex;
     justify-content: center;
     position: relative;
     width: 286px;
   }
-  body .list-container .input-container .ri-close-line {
+  body .todo-list-wrapper .task-input-wrapper .ri-close-line {
     cursor: pointer;
     position: absolute;
     right: 28px;
@@ -93,12 +93,12 @@
     transform: translateY(-50%);
     transition: 0.4s;
   }
-  body .list-container .input-container .ri-close-line:hover {
+  body .todo-list-wrapper .task-input-wrapper .ri-close-line:hover {
     color: white;
     border-color: rebeccapurple;
     background-color: rebeccapurple;
   }
-  body .list-container .input-container input {
+  body .todo-list-wrapper .task-input-wrapper input {
     font-family: "Roboto", sans-serif;
     width: 286px;
     height: 40px;
@@ -146,7 +146,7 @@
   body button:hover {
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   }
-  body .note-container {
+  body .task-notes-wrapper {
     overflow-y: auto;
     width: 286px;
     max-height: 200px;
@@ -154,13 +154,13 @@
     border: 1px solid transparent;
     margin-top: 20px;
   }
-  body .note-container .note {
+  body .task-notes-wrapper .note {
     display: flex;
     align-items: center;
     justify-content: space-around;
     border-radius: 10px;
   }
-  body .note-container .note .ri-close-line {
+  body .task-notes-wrapper .note .ri-close-line {
     cursor: pointer;
     border: 1px solid #c4c4c4;
     border-radius: 50%;
@@ -170,12 +170,12 @@
     color: #c4c4c4;
     transition: 0.4s;
   }
-  body .note-container .note .ri-close-line:hover {
+  body .task-notes-wrapper .note .ri-close-line:hover {
     color: white;
     border-color: rebeccapurple;
     background-color: rebeccapurple;
   }
-  body .note-container .note p {
+  body .task-notes-wrapper .note p {
     width: 200px;
     min-height: 20px;
     display: flex;
